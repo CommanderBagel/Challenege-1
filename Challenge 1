@@ -1,0 +1,32 @@
+#  Goal #1: Create a program that asks the user to enter their name and their age.
+#  Print out a message addressed to them that tells them the year that they will turn
+#  100 years old.
+
+print('What is you name?')  #This asks the user's name
+UserName = input()          #The user's name is now the value UserName and is a String
+ 
+print('Thanks User ' + UserName + '.') #This line displays Thanks to the given name.
+
+
+print('Please enter your age:')
+UserAge = input()
+
+print('Your age is: ' + UserAge + ' years old.')
+
+#  print('User ' + UserName + ', you will be 100 years old in ' + str(100 - int(UserAge)) + ' years and the year will be ' + str((100 - (int(UserAge)) + int(CurYear))))
+print('User ' + UserName + ', you will be 100 years old in the year ' + str(int(2020 - int(UserAge) + 100)))
+
+
+#  Add on to the previous program by asking the user for another number and printing out that many copies of the previous message. (Hint: order of operations exists in Python)
+#  Print out that many copies of the previous message on separate lines. (Hint: the string "\n is the same as pressing the ENTER button)
+
+print('Just for gags, pick a number' + '\n') #, any number less than 100 but greater than 0')
+Num = input()
+print(('Your number is ' + str(Num) + '\n') * int(Num))
+
+print('Done, Sir, Done!')
+
+
+# Would this code have to be updated "annually" to reflect a correct year or rely on user data?
+
+
